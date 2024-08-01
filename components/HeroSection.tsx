@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import { DotBackground } from "./ui/DotBackgroud";
+import { DotBackground } from "./ui/dot-background";
 
 export function HeroSection() {
   return (

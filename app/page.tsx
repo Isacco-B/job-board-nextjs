@@ -1,21 +1,23 @@
 import { HeroSection } from "@/components/HeroSection";
-import { InfiniteMovingCards } from "@/components/ui/InfiniteMovingCards";
+import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards.tsx";
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <HeroSection />
       <section>
-        <h1 className="text-3xl font-bold underline text-center">Join our job board</h1>
         <div className="absolute">
-          <InfiniteMovingCards
-            items={testimonials}
-            direction="right"
-            speed="slow"
-          />
+          <h1 className="text-3xl font-bold underline text-center">
+            Join our job board
+          </h1>
+            <InfiniteMovingCards
+              items={testimonials}
+              direction="right"
+              speed="slow"
+            />
         </div>
       </section>
-    </main>
+    </div>
   );
 }
 
